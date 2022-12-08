@@ -18,7 +18,7 @@ public class MyRestController {
 
 
     @GetMapping("/books")
-    public List<Book> showAllEmployees(Model model){
+    public List<Book> getAllBooks(Model model){
 
         List<Book> allBooks= bookService.getAllBooks();
         model.addAttribute("allBooks",allBooks);
